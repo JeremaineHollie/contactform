@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h5>
+        GET IN TOUCH WITH ME:
+    </h5>
+    <form>
+     <fieldset>
+        <label for="user-email">Email</label>
+        <br>
+        <input type="email" id="user-email" name="user-email"
+          placeholder="Enter your email" required
+          pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+          <br>
+          <label for="user-phone">Phone</label>
+          <br>
+          <input type="text" id="user-phone" name="phone" pattern="[0-9]{10}"
+          placeholder="Enter your 10-digit phone number">
+          <hr>
+          <br>
+          <label for="date">Contact By This Date:</label>
+          <br>
+          <input type="date" id="by-date"
+          name="by-date"
+          placeholder="Select a Date">
+          <hr>
+          <br>
+          <label>Preferred Contact Method:</label>
+          <br>
+          <input type="radio" id="email" name="contact-method" value="email">
+          <label for="email">Email</label>
+          <br>
+          <input type="radio" id="phone" name="contact-method" value="phone">
+          <label for="phone">Phone</label>
+          <hr>
+          <br>
+          <label for="subscribe">Subscribe to Newsletter</label>
+          <br>
+          <input type="checkbox" id="subscribe" name="subscribe" value="true" checked>
+          <hr>
+          <br>
+          <label for="cars">Preferred Contact Time:</label>
+          <br>
+          <select name="contact-time" id="contact-time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+          <br>
+          <button type="submit" aria-label="Submit Form">Submit</button>
+     </fieldset>
+</body>
+</html>
